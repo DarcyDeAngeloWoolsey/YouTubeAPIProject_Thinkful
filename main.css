@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*general styles*/
+
+html {
+    background: rgba(0, 0, 0, 0) url("wave.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+main .searchSection {
+    width: 700px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, .2);
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5em;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+main .searchSection h1 {
+    font-size: 2.5em;
+    color: rgba(0, 0, 0, .7);
+}
+
+main .searchSection h2 {
+    font-size: 2em;
+    color: rgba(0, 0, 0, .7);
+}
+
+main .searchSection form {
+    margin-top: 10%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.searchBox {
+    height: 50px;
+}
+
+main .searchSection input {
+    width: 300px;
+    height: 100%;
+    font-size: 1em;
+}
+
+main .searchSection button {
+    width: 50px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .4);
+}
+
+.searchResults {
+    text-align: center;
+    padding: 20px 50px;
+}
+
+.searchResults ul li {
+    width: 250px;
+    height: 150px;
+    display: inline-block;
+    text-align: center;
+    margin: 10px 20px;
+}
+
+.searchResults ul li img {
+    width: 100px;
+    height: 88px;
+}
+
+
+/*media queries styles*/
+
+@media only screen and (max-width: 700px) {
+    main .searchSection {
+        width: 100%;
+        height: 250px;
+        border-radius: 0;
+    }
+    main .searchSection h2 {
+        font-size: 1.5em;
+    }
+    main .searchSection input {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 960px) and (min-width: 701px) {
+    main .searchSection {
+        width: 550px;
+        height: 250px;
+    }
+}
